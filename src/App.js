@@ -39,9 +39,8 @@ class App extends Component {
     <>
       <Navbar />
       <div className="container">
-    <h1>Cosa desideri ordinare?</h1>
-        <hr />
-        <div className="row row-cols-1 row-cols-md-3 ">
+    <h1 style={{margin: '30px',padding: '10px', textAlign: 'center', fontSize:'3rem'}}>Cosa desideri ordinare?</h1>
+        <div style={{display:'flex', flexWrap:'wrap', gap:'10px'}}>
           {this.state.cards.map(card => (
             <Card 
               key={card.id}
