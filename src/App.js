@@ -41,7 +41,7 @@ class App extends Component {
       <div className="container">
     <h1>Cosa desideri ordinare?</h1>
         <hr />
-        <div className="row">
+        <div className="row row-cols-1 row-cols-md-3 ">
           {this.state.cards.map(card => (
             <Card 
               key={card.id}
